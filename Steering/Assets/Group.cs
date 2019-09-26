@@ -42,7 +42,7 @@ public class Group : MonoBehaviour
          
     }
 
-    private Quaternion FindRotation()
+    private void FindRotation()
     {
         if (Friends != null)
             for (int i = 0; i < Friends.Count; i++)
@@ -52,6 +52,6 @@ public class Group : MonoBehaviour
                 qAverage *= Quaternion.Slerp(Quaternion.identity, q, Friends.Count);
             }
         Debug.Log(qAverage);
-        return qAverage;
+        
     }
 }

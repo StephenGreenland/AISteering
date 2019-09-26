@@ -2,9 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="769983dd-f78d-4395-a5eb-f6f036adc8fc" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.Steering/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Steering/.idea/contentModel.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.Steering/.idea/indexLayout.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Steering/.idea/indexLayout.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.Steering/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Steering/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Group.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Group.cs" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -29,6 +27,7 @@
         <option value="$PROJECT_DIR$/Assets/Spawner.cs" />
         <option value="$PROJECT_DIR$/Assets/avoid.cs" />
         <option value="$PROJECT_DIR$/Assets/Roam.cs" />
+        <option value="$PROJECT_DIR$/Assets/Group.cs" />
       </list>
     </option>
   </component>
@@ -79,7 +78,7 @@
       <option name="presentableId" value="Default" />
       <updated>1568854373364</updated>
       <workItem from="1568854374868" duration="14040000" />
-      <workItem from="1569456719918" duration="455000" />
+      <workItem from="1569456719918" duration="700000" />
     </task>
     <servers />
   </component>
