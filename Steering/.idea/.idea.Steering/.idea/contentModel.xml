@@ -7,6 +7,7 @@
       <e p="Assembly-CSharp.csproj" t="IncludeRecursive" />
       <e p="Assets" t="Include">
         <e p="avoid.cs" t="Include" />
+        <e p="Dectect_friends.cs" t="Include" />
         <e p="Group.cs" t="Include" />
         <e p="movment.cs" t="Include" />
         <e p="Roam.cs" t="Include" />

@@ -8,6 +8,7 @@ public class Group : MonoBehaviour
     public List<GameObject> Friends;
     private Quaternion qAverage;
     private Rigidbody rb;
+    private Quaternion q;
     
     // Start is called before the first frame update
     void Start()
@@ -44,14 +45,14 @@ public class Group : MonoBehaviour
 
     private void FindRotation()
     {
-        if (Friends != null)
+       // if (Friends != null)
             for (int i = 0; i < Friends.Count; i++)
             {
                 Quaternion q = Friends[i].transform.rotation;
 
-                qAverage *= Quaternion.Slerp(Quaternion.identity, q, Friends.Count);
+                qAverage *= Quaternion.Lerp(Quaternion.identity, q, Friends.Count);
             }
-        Debug.Log(qAverage);
+        
         
     }
 }
