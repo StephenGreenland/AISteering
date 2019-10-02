@@ -103,7 +103,8 @@ GameObject:
   - component: {fileID: 8261478992111318332}
   - component: {fileID: 1965681102090977023}
   - component: {fileID: 8101719582513479789}
-  - component: {fileID: 4534667636975272532}
+  - component: {fileID: 5401807067480910616}
+  - component: {fileID: 5186286361447524501}
   m_Layer: 0
   m_Name: Cube
   m_TagString: Untagged
@@ -158,6 +159,7 @@ MeshRenderer:
   m_ProbeAnchor: {fileID: 0}
   m_LightProbeVolumeOverride: {fileID: 0}
   m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
   m_PreserveUVs: 0
   m_IgnoreNormalsForChartDetection: 0
   m_ImportantGI: 0
@@ -170,18 +172,33 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
---- !u!65 &4534667636975272532
-BoxCollider:
+--- !u!114 &5401807067480910616
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4196405099996334745}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 88106e5d3c168e24ead42f909b3ec55e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Friends: []
+  rb: {fileID: 6018759696960376151}
+  boi: {fileID: 6018759696960376138}
+--- !u!135 &5186286361447524501
+SphereCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4196405099996334745}
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 1, y: 1, z: 1}
+  m_Radius: 20
   m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &6018759696960376138
 GameObject:
@@ -198,8 +215,6 @@ GameObject:
   - component: {fileID: 6018759696960376151}
   - component: {fileID: 6018759696960376148}
   - component: {fileID: 6018759696960376149}
-  - component: {fileID: 5245106796013922163}
-  - component: {fileID: 461298221658566327}
   m_Layer: 0
   m_Name: Capsule
   m_TagString: Untagged
@@ -257,6 +272,7 @@ MeshRenderer:
   m_ProbeAnchor: {fileID: 0}
   m_LightProbeVolumeOverride: {fileID: 0}
   m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
   m_PreserveUVs: 0
   m_IgnoreNormalsForChartDetection: 0
   m_ImportantGI: 0
@@ -327,29 +343,3 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 10
---- !u!135 &5245106796013922163
-SphereCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6018759696960376138}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 1
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Radius: 6
-  m_Center: {x: 0, y: 0, z: 0}
---- !u!114 &461298221658566327
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6018759696960376138}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 88106e5d3c168e24ead42f909b3ec55e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Friends: []
