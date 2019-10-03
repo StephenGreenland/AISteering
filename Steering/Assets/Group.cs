@@ -7,21 +7,25 @@ public class Group : MonoBehaviour
 {
     public List<GameObject> Friends;
     private Quaternion qAverage;
-    private Rigidbody rb;
+    public Rigidbody rb;
+    public GameObject boi;
     private Quaternion q;
     
     // Start is called before the first frame update
     void Start()
     {
-        rb = this.gameObject.GetComponent<Rigidbody>();
+       // rb = this.gameObject.GetComponent<Rigidbody>();
         // Friends = new List<Quaternion>();
+        qAverage = boi.transform.rotation;
     }
 
     // Update is called once per frame
     void FixedUpdate()
     {
         FindRotation();
-        rb.AddTorque(qAverage.x,qAverage.y,qAverage.z);
+      
+            
+
 
     }
     
@@ -48,9 +52,11 @@ public class Group : MonoBehaviour
        // if (Friends != null)
             for (int i = 0; i < Friends.Count; i++)
             {
-                Quaternion q = Friends[i].transform.rotation;
+                q = Friends[i].transform.rotation;
 
-                qAverage *= Quaternion.Lerp(Quaternion.identity, q, Friends.Count);
+                qAverage = Quaternion.Slerp(Quaternion.identity, q, Friends.Count);
+
+                boi.transform.rotation = qAverage;
             }
         
         
